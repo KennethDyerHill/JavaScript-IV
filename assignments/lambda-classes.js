@@ -71,7 +71,7 @@ const instructorOne = new Instructors ({
 console.log({instructorOne,studentOne});
 instructorOne.demo("Python");
 instructorOne.grade(studentOne, "Python");
-studentOne.listsSubjects();
+studentOne.listSubjects();
 studentOne.PRAssignment("JavaScript");
 studentOne.sprintChallenge("Web Design");
 // teamLead.standUp("#WEB22_seth");
