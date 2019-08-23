@@ -2,9 +2,9 @@
 
 class Person {
     constructor(attrs){
-    this.name = attrs.Name,
-    this.age = attrs.Age,
-    this.location = attrs.Location
+    this.name = attrs.name,
+    this.age = attrs.age,
+    this.location = attrs.location
 }
 speak() {
     console.log(`{Hello my name is ${this.name}, I am from ${this.location}.}`);
@@ -15,8 +15,8 @@ class Instructors extends Person {
     constructor(attrs) {
         super(attrs),
         this.specialty = attrs.specialty,
-        this.favLanguage = attrs.FavLanguage,
-        this.catchPhrase = attrs.CatchPhrase
+        this.favLanguage = attrs.favLanguage,
+        this.catchPhrase = attrs.catchPhrase
     }
     demo(subject) {
         console.log(`Today we are learning about ${subject}.`);
@@ -29,9 +29,9 @@ class Instructors extends Person {
 class Students extends Person {
     constructor(attrs) {
         super(attrs),
-        this.previousBackground = attrs.PreviousBackground,
-        this.className = attrs.ClassName,
-        this.favSubjects = attrs.FavSubjects
+        this.previousBackground = attrs.previousBackground,
+        this.className = attrs.className,
+        this.favSubjects = attrs.favSubjects
     }
     listSubjects() {
             this.favSubjects.forEach(function(i){console.log(i)});
@@ -61,7 +61,8 @@ class ProjectManagers extends Instructors {
 const studentOne = new Students ({
     name: 'Link',
     age: 'Unknown',
-    location: 'Highrule'
+    location: 'Highrule',
+    favSubjects: 'Sword Fighting'
 });
 
 const instructorOne = new Instructors ({
